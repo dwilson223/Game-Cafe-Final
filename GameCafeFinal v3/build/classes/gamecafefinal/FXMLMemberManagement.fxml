@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="490.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gamecafefinal.FXMLDocumentController">
+   <children>
+      <TableView fx:id="table" layoutX="14.0" layoutY="108.0" prefHeight="361.0" prefWidth="600.0">
+        <columns>
+            <TableColumn fx:id="mId" minWidth="100.0" prefWidth="75.0" text="Member ID" />
+          <TableColumn id="mName" fx:id="mName" minWidth="100.0" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="mDob" minWidth="100.0" prefWidth="75.0" text="Date Of Birth" />
+            <TableColumn fx:id="mAddress" minWidth="100.0" prefWidth="75.0" text="Address " />
+            <TableColumn fx:id="mTel" minWidth="100.0" prefWidth="75.0" text="Telephone No" />
+            <TableColumn fx:id="mType" minWidth="100.0" prefWidth="75.0" text="Type" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnLoad" layoutX="661.0" layoutY="108.0" mnemonicParsing="false" onAction="#loadData" text="View Member Details" />
+      <MenuBar id="menu_header" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="850.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="New member" />
+                  <MenuItem mnemonicParsing="false" text="View member profile" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Delete member" />
+                  <MenuItem mnemonicParsing="false" text="Quit" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Go to">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Home" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="eSports Events" />
+                  <MenuItem mnemonicParsing="false" text="Bookings" />
+                  <MenuItem mnemonicParsing="false" text="Games" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About Game cafe" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Label alignment="CENTER" layoutX="206.0" layoutY="42.0" prefHeight="44.0" prefWidth="398.0" text="Member Management" />
+      <Button fx:id="btnAddMember" layoutX="661.0" layoutY="161.0" mnemonicParsing="false" onAction="#changeSceneAction" prefHeight="31.0" prefWidth="161.0" text="Add New Member" />
+      <Button fx:id="btnBack" layoutX="20.0" layoutY="55.0" mnemonicParsing="false" onAction="#changeSceneAction" text="Back" />
+   </children>
+</AnchorPane>

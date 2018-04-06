@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="490.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gamecafefinal.FXMLDocumentController">
+   <children>
+      <MenuBar id="menu_header" layoutX="15.0" layoutY="14.0" prefHeight="32.0" prefWidth="850.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="New member" />
+                  <MenuItem mnemonicParsing="false" text="View member profile" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Delete member" />
+                  <MenuItem mnemonicParsing="false" text="Quit" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Go to">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Home" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="eSports Events" />
+                  <MenuItem mnemonicParsing="false" text="Bookings" />
+                  <MenuItem mnemonicParsing="false" text="Games" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About Game cafe" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Label alignment="CENTER" layoutX="241.0" layoutY="46.0" prefHeight="44.0" prefWidth="398.0" text="Games Management" />
+      <TableView fx:id="gTable" layoutX="15.0" layoutY="113.0" prefHeight="350.0" prefWidth="640.0">
+        <columns>
+          <TableColumn fx:id="gId" minWidth="106.0" prefWidth="75.0" text="Game ID" />
+          <TableColumn fx:id="gTitle" minWidth="106.0" prefWidth="75.0" text="Title" />
+            <TableColumn fx:id="gRating" minWidth="106.0" prefWidth="75.0" text="Rating" />
+            <TableColumn fx:id="gPlatform" minWidth="106.0" prefWidth="75.0" text="Platform" />
+            <TableColumn fx:id="gType" minWidth="106.0" prefWidth="75.0" text="Type" />
+            <TableColumn fx:id="gMultiplayer" minWidth="106.0" prefWidth="75.0" text="Multiplayer" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnLoadGames" layoutX="685.0" layoutY="113.0" mnemonicParsing="false" onAction="#loadGameData" prefHeight="31.0" prefWidth="154.0" text="View Current Range" />
+      <Button fx:id="btnNewGame" layoutX="685.0" layoutY="166.0" mnemonicParsing="false" onAction="#changeSceneAction" prefHeight="31.0" prefWidth="154.0" text="Add New Game" />
+      <Button fx:id="btnBack" layoutX="24.0" layoutY="59.0" mnemonicParsing="false" onAction="#changeSceneAction" text="Back" />
+   </children>
+</AnchorPane>
