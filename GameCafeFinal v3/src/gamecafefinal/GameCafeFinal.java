@@ -18,7 +18,7 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author Dave
+ * @author Dave, Tiago, Dan and Jordan
  */
 public class GameCafeFinal extends Application {
     
@@ -33,6 +33,7 @@ public class GameCafeFinal extends Application {
         stage.show();
     }
 
+    
     /**
      * @param args the command line arguments
      */
