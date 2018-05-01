@@ -105,6 +105,15 @@ public class Games {
     public StringProperty typeProperty() {
         return type;
     }
+    
+    //Checks
+    
+    public boolean checkGameId(int number){
+        if(number > 0){
+            return true;
+        }
+        return false;
+    }
 
     
 }

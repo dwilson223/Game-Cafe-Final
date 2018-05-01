@@ -134,7 +134,7 @@ public class Member {
         this.postcode = postcode;
     }
     
-    public boolean checkID(int number){
+    public boolean checkmemberid(int number){
         if(number > 0){
             return true;
         }

@@ -104,5 +104,15 @@ public class members {
     public StringProperty typeProperty() {
         return type;
     }
+    
+    //Checks
+    
+    public boolean checkId(int number){
+        if(number > 0){
+            return true;
+        }
+        return false;
+    }
+    
 
 }
