@@ -20,7 +20,7 @@
         <columns>
             <TableColumn fx:id="gId" minWidth="100.0" prefWidth="75.0" text="Game ID" />
           <TableColumn id="mName" fx:id="gTitle" minWidth="100.0" prefWidth="204.0" text="Name" />
-          <TableColumn fx:id="gMultiplayer" minWidth="85.0" prefWidth="157.0" text="Player Mode" />
+          <TableColumn fx:id="gMultiplayer" minWidth="85.0" prefWidth="157.0" text="Multiplayer" />
             <TableColumn fx:id="gType" minWidth="100.0" prefWidth="148.0" text="Type" />
             <TableColumn fx:id="gRating" minWidth="100.0" prefWidth="110.0" text="PEGI_age" />
             <TableColumn fx:id="gPlatform" minWidth="100.0" prefWidth="75.0" text="Platform" />
@@ -55,7 +55,7 @@
       </MenuBar>
       <Label alignment="CENTER" layoutY="39.0" prefHeight="27.0" prefWidth="1000.0" text="Game Management">
       </Label>
-      <Button fx:id="btnAddMember" layoutX="16.0" layoutY="101.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="129.0" text="New" />
+      <Button fx:id="btnAddMember" layoutX="16.0" layoutY="101.0" mnemonicParsing="false" onAction="#goToAddGames" prefHeight="32.0" prefWidth="129.0" text="New" />
       <Button fx:id="btnBack" layoutX="4.0" layoutY="4.0" mnemonicParsing="false" onAction="#goToDashboard" prefHeight="32.0" prefWidth="54.0" text="Back" />
       <Button layoutX="15.0" layoutY="183.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="129.0" text="Delete" />
       <Separator layoutX="6.0" layoutY="72.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="0.0" prefWidth="1000.0" />

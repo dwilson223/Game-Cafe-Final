@@ -93,6 +93,7 @@ public class GamesManagementController implements Initializable {
         gTable.setItems(null);
         gTable.setItems(gameData);
         
+        
      
     }
     
@@ -101,6 +102,7 @@ public class GamesManagementController implements Initializable {
     private void goToMembersManagement(ActionEvent event) throws IOException {
        ov.open(event, "MembersManagement.fxml"); 
     }
+    
      @FXML
     private void goToEventsManagement(ActionEvent event) throws IOException {
        ov.open(event, "EventsManagement.fxml"); 
@@ -112,6 +114,10 @@ public class GamesManagementController implements Initializable {
     @FXML
     private void goToDashboard(ActionEvent event) throws IOException {
        ov.open(event, "Dashboard-home.fxml"); 
+    }
+    @FXML
+    private void goToAddGames(ActionEvent event) throws IOException {
+       ov.open(event, "AddGamePage.fxml"); 
     }
     /* _______________________________________________________________________ */
     

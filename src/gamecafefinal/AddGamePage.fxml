@@ -6,7 +6,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gamecafefinal.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gamecafefinal.AddGameController">
     <children>
       <MenuBar id="menu_header" layoutY="7.0" prefHeight="32.0" prefWidth="1105.0">
          <menus>
@@ -53,12 +53,10 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <TextField fx:id="textGameID" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <TextField fx:id="textTitle" GridPane.columnIndex="1" GridPane.rowIndex="2" />
             <TextField fx:id="textRating" GridPane.columnIndex="1" GridPane.rowIndex="3" />
             <TextField fx:id="textMultiplayer" GridPane.columnIndex="1" GridPane.rowIndex="6" />
             <TextField fx:id="textGameType" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-            <Label text="Game ID:" GridPane.rowIndex="1" />
             <Label text="Title:" GridPane.rowIndex="2" />
             <Label text="Rating:" GridPane.rowIndex="3" />
             <Label text="Platform:" GridPane.rowIndex="4" />
@@ -69,6 +67,6 @@
             <TextField fx:id="textPlatform" GridPane.columnIndex="1" GridPane.rowIndex="4" />
          </children>
       </GridPane>
-      <Button fx:id="btnBack" layoutX="33.0" layoutY="46.0" mnemonicParsing="false" onAction="#changeSceneAction" text="Back" />
+      <Button fx:id="btnBack" layoutX="33.0" layoutY="46.0" mnemonicParsing="false" onAction="#goToGamesManagement" text="Back" />
    </children>
 </AnchorPane>
