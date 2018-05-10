@@ -11,16 +11,14 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="479.0" prefWidth="880.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.4" fx:controller="gamecafefinal.BookingsManagementController">
+<AnchorPane id="AnchorPane" prefHeight="479.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gamecafefinal.BookingsManagementController">
 <children>
       <TableView fx:id="table" layoutX="159.0" layoutY="74.0" prefHeight="164.0" prefWidth="720.0">
         <columns>
-            <TableColumn fx:id="mId" minWidth="100.0" prefWidth="75.0" text="Member ID" />
-          <TableColumn id="mName" fx:id="mName" minWidth="100.0" prefWidth="75.0" text="Name" />
-          <TableColumn fx:id="mDob" minWidth="100.0" prefWidth="75.0" text="Date Of Birth" />
-            <TableColumn fx:id="mAddress" minWidth="100.0" prefWidth="75.0" text="Address " />
-            <TableColumn fx:id="mTel" minWidth="100.0" prefWidth="75.0" text="Telephone No" />
-            <TableColumn fx:id="mType" minWidth="100.0" prefWidth="75.0" text="Type" />
+            <TableColumn fx:id="gbId" minWidth="100.0" prefWidth="165.0" text="Game booking ID" />
+          <TableColumn id="mName" fx:id="gbPrice" minWidth="100.0" prefWidth="203.0" text="Price" />
+          <TableColumn fx:id="gbDuration" minWidth="100.0" prefWidth="197.0" text="Duration" />
+            <TableColumn fx:id="gbMemberId" minWidth="100.0" prefWidth="153.0" text="Member ID" />
         </columns>
       </TableView>
       <MenuBar id="menu_header" layoutX="58.0" layoutY="4.0" prefHeight="32.0" prefWidth="822.0">
@@ -67,8 +65,10 @@
       <Separator layoutX="6.0" layoutY="249.0" prefHeight="3.0" prefWidth="872.0" />
       <TableView layoutX="159.0" layoutY="252.0" prefHeight="200.0" prefWidth="720.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="C1" />
-          <TableColumn prefWidth="75.0" text="C2" />
+          <TableColumn fx:id="ebId" prefWidth="167.0" text="Event booking ID" />
+          <TableColumn fx:id="ebNTickects" prefWidth="204.0" text="Number of tickets" />
+            <TableColumn fx:id="ebEventId" prefWidth="198.0" text="Event ID" />
+            <TableColumn fx:id="ebMemberId" prefWidth="149.0" text="Member ID" />
         </columns>
       </TableView>
       <Label layoutX="16.0" layoutY="252.0" prefHeight="44.0" prefWidth="129.0" text="Manage event bookings" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="183.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="735.0" AnchorPane.topAnchor="252.0" />

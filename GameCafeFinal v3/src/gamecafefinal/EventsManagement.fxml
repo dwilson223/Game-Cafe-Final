@@ -15,12 +15,12 @@
 <children>
       <TableView fx:id="table" layoutX="159.0" layoutY="74.0" prefHeight="411.0" prefWidth="720.0">
         <columns>
-            <TableColumn fx:id="mId" minWidth="100.0" prefWidth="75.0" text="Member ID" />
-          <TableColumn id="mName" fx:id="mName" minWidth="100.0" prefWidth="75.0" text="Name" />
-          <TableColumn fx:id="mDob" minWidth="100.0" prefWidth="75.0" text="Date Of Birth" />
-            <TableColumn fx:id="mAddress" minWidth="100.0" prefWidth="75.0" text="Address " />
-            <TableColumn fx:id="mTel" minWidth="100.0" prefWidth="75.0" text="Telephone No" />
-            <TableColumn fx:id="mType" minWidth="100.0" prefWidth="75.0" text="Type" />
+            <TableColumn fx:id="eId" minWidth="73.0" prefWidth="73.0" text="Event ID" />
+          <TableColumn id="mName" fx:id="eType" minWidth="100.0" prefWidth="127.0" text="Type" />
+          <TableColumn fx:id="eDescription" minWidth="100.0" prefWidth="200.0" text="Description" />
+            <TableColumn fx:id="eDate" minWidth="99.0" prefWidth="99.0" text="Date" />
+            <TableColumn fx:id="eTime" minWidth="100.0" prefWidth="112.0" text="Time" />
+            <TableColumn fx:id="eAvailability" minWidth="97.0" prefWidth="108.0" text="Availability" />
         </columns>
       </TableView>
       <MenuBar id="menu_header" layoutX="58.0" layoutY="4.0" prefHeight="32.0" prefWidth="822.0">
@@ -54,7 +54,7 @@
       </Label>
       <Button fx:id="btnAddEvent" layoutX="16.0" layoutY="101.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="129.0" text="New" />
       <Button fx:id="btnBack" layoutX="4.0" layoutY="4.0" mnemonicParsing="false" onAction="#goToDashboard" prefHeight="32.0" prefWidth="54.0" text="Back" />
-      <Button layoutX="15.0" layoutY="183.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="129.0" text="Delete" />
+      <Button fx:id="btnDeleteEvent" layoutX="15.0" layoutY="183.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="129.0" text="Delete" />
       <Separator layoutX="6.0" layoutY="72.0" prefHeight="0.0" prefWidth="872.0" />
       <Button fx:id="btnEditEvent" layoutX="16.0" layoutY="141.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="129.0" text="Edit" />
       <Label layoutX="30.0" layoutY="74.0" prefHeight="27.0" prefWidth="129.0" text="Manage events" textAlignment="CENTER">

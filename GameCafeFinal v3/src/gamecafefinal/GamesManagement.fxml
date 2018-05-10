@@ -16,11 +16,10 @@
       <TableView fx:id="table" layoutX="159.0" layoutY="74.0" prefHeight="411.0" prefWidth="720.0">
         <columns>
             <TableColumn fx:id="mId" minWidth="100.0" prefWidth="75.0" text="Game ID" />
-          <TableColumn id="mName" fx:id="mName" minWidth="100.0" prefWidth="75.0" text="Title" />
-          <TableColumn fx:id="mDob" minWidth="100.0" prefWidth="75.0" text="Rating" />
-            <TableColumn fx:id="mAddress" minWidth="100.0" prefWidth="75.0" text="Platform" />
-            <TableColumn fx:id="mTel" minWidth="100.0" prefWidth="75.0" text="Type" />
-            <TableColumn fx:id="mType" minWidth="100.0" prefWidth="75.0" text="Multiplayer" />
+          <TableColumn id="mName" fx:id="mName" minWidth="100.0" prefWidth="204.0" text="Name" />
+          <TableColumn fx:id="mDob" minWidth="85.0" prefWidth="157.0" text="Player Mode" />
+            <TableColumn fx:id="mAddress" minWidth="100.0" prefWidth="148.0" text="Type" />
+            <TableColumn fx:id="mTel" minWidth="100.0" prefWidth="110.0" text="PEGI_age" />
         </columns>
       </TableView>
       <MenuBar id="menu_header" layoutX="58.0" layoutY="4.0" prefHeight="32.0" prefWidth="822.0">

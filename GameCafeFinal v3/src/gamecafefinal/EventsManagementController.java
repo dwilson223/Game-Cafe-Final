@@ -24,10 +24,25 @@ public class EventsManagementController implements Initializable {
     /**
      * Initializes the controller class.
      */
-        @FXML
+/* ----------------------- View Management ------------------------------ */
+    @FXML
+    private void goToGamesManagement(ActionEvent event) throws IOException {
+       ov.open(event, "GamesManagement.fxml"); 
+    }
+     @FXML
+    private void goToMembersManagement(ActionEvent event) throws IOException {
+       ov.open(event, "MembersManagement.fxml"); 
+    }
+     @FXML
+    private void goToBookingsManagement(ActionEvent event) throws IOException {
+       ov.open(event, "BookingsManagement.fxml"); 
+    }
+    @FXML
     private void goToDashboard(ActionEvent event) throws IOException {
        ov.open(event, "Dashboard-home.fxml"); 
     }
+    /* _______________________________________________________________________ */
+    
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {

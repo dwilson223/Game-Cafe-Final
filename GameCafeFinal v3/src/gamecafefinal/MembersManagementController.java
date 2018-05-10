@@ -62,9 +62,24 @@ public class MembersManagementController implements Initializable {
     private void changeSceneAction(ActionEvent event) {
     }
     
-        @FXML
+/* ----------------------- View Management ------------------------------ */
+    @FXML
+    private void goToGamesManagement(ActionEvent event) throws IOException {
+       ov.open(event, "GamesManagement.fxml"); 
+    }
+     @FXML
+    private void goToEventsManagement(ActionEvent event) throws IOException {
+       ov.open(event, "EventsManagement.fxml"); 
+    }
+     @FXML
+    private void goToBookingsManagement(ActionEvent event) throws IOException {
+       ov.open(event, "BookingsManagement.fxml"); 
+    }
+    @FXML
     private void goToDashboard(ActionEvent event) throws IOException {
        ov.open(event, "Dashboard-home.fxml"); 
     }
+    /* _______________________________________________________________________ */
+    
     
 }
