@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gamecafefinal.EventsManagementController">
+<children>
+      <TableView fx:id="etable" layoutX="159.0" layoutY="74.0" prefHeight="411.0" prefWidth="720.0">
+        <columns>
+            <TableColumn fx:id="eId" minWidth="73.0" prefWidth="73.0" text="Event ID" />
+          <TableColumn id="mName" fx:id="eType" minWidth="100.0" prefWidth="127.0" text="Type" />
+          <TableColumn fx:id="eDescription" minWidth="100.0" prefWidth="200.0" text="Description" />
+            <TableColumn fx:id="eDate" minWidth="99.0" prefWidth="99.0" text="Date" />
+            <TableColumn fx:id="eTime" minWidth="100.0" prefWidth="112.0" text="Time" />
+            <TableColumn fx:id="eAvailability" minWidth="97.0" prefWidth="108.0" text="Availability" />
+        </columns>
+      </TableView>
+      <MenuBar id="menu_header" layoutX="58.0" layoutY="4.0" prefHeight="32.0" prefWidth="822.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="New member" />
+                  <MenuItem mnemonicParsing="false" text="View member profile" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Delete member" />
+                  <MenuItem mnemonicParsing="false" text="Quit" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Go to">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Home" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="eSports Events" />
+                  <MenuItem mnemonicParsing="false" text="Bookings" />
+                  <MenuItem mnemonicParsing="false" text="Games" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About Game cafe" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Label alignment="CENTER" layoutY="39.0" prefHeight="27.0" prefWidth="880.0" text="E Sports event Management">
+      </Label>
+      <Button fx:id="btnAddEvent" layoutX="16.0" layoutY="101.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="129.0" text="New" />
+      <Button fx:id="btnBack" layoutX="4.0" layoutY="4.0" mnemonicParsing="false" onAction="#goToDashboard" prefHeight="32.0" prefWidth="54.0" text="Back" />
+      <Button fx:id="btnDeleteEvent" layoutX="15.0" layoutY="183.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="129.0" text="Delete" />
+      <Separator layoutX="6.0" layoutY="72.0" prefHeight="0.0" prefWidth="872.0" />
+      <Button fx:id="btnEditEvent" layoutX="16.0" layoutY="141.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="129.0" text="Edit" />
+      <Label layoutX="30.0" layoutY="74.0" prefHeight="27.0" prefWidth="129.0" text="Manage events" textAlignment="CENTER">
+
+      </Label>
+   </children>    
+</AnchorPane>
