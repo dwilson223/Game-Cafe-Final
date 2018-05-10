@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="479.0" prefWidth="880.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.4" fx:controller="gamecafefinal.BookingsManagementController">
+<children>
+      <TableView fx:id="table" layoutX="159.0" layoutY="74.0" prefHeight="164.0" prefWidth="720.0">
+        <columns>
+            <TableColumn fx:id="mId" minWidth="100.0" prefWidth="75.0" text="Member ID" />
+          <TableColumn id="mName" fx:id="mName" minWidth="100.0" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="mDob" minWidth="100.0" prefWidth="75.0" text="Date Of Birth" />
+            <TableColumn fx:id="mAddress" minWidth="100.0" prefWidth="75.0" text="Address " />
+            <TableColumn fx:id="mTel" minWidth="100.0" prefWidth="75.0" text="Telephone No" />
+            <TableColumn fx:id="mType" minWidth="100.0" prefWidth="75.0" text="Type" />
+        </columns>
+      </TableView>
+      <MenuBar id="menu_header" layoutX="58.0" layoutY="4.0" prefHeight="32.0" prefWidth="822.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Book a game" />
+                  <MenuItem mnemonicParsing="false" text="View game booking details" />
+                  <MenuItem mnemonicParsing="false" text="Delete a game bokking" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Book an event" />
+                  <MenuItem mnemonicParsing="false" text="Delete an event bokking" />
+                  <MenuItem mnemonicParsing="false" text="View event booking details" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Quit" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Go to">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Home" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="eSports Events" />
+                  <MenuItem mnemonicParsing="false" text="Members" />
+                  <MenuItem mnemonicParsing="false" text="Games" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About Game cafe" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Label alignment="CENTER" layoutY="39.0" prefHeight="27.0" prefWidth="880.0" text="Booking Management">
+      </Label>
+      <Button fx:id="btnAddBokking" layoutX="16.0" layoutY="124.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="129.0" text="New" />
+      <Button fx:id="btnBack" layoutX="4.0" layoutY="4.0" mnemonicParsing="false" onAction="#goToDashboard" prefHeight="32.0" prefWidth="54.0" text="Back" />
+      <Button fx:id="btnDelete" layoutX="16.0" layoutY="203.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="129.0" text="Delete" />
+      <Separator layoutX="6.0" layoutY="72.0" prefHeight="0.0" prefWidth="872.0" />
+      <Button fx:id="btnEditBooking" layoutX="16.0" layoutY="162.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="129.0" text="Edit" />
+      <Label layoutX="16.0" layoutY="75.0" prefHeight="44.0" prefWidth="129.0" text="Manage game bookings" textAlignment="CENTER" wrapText="true">
+
+      </Label>
+      <Separator layoutX="6.0" layoutY="249.0" prefHeight="3.0" prefWidth="872.0" />
+      <TableView layoutX="159.0" layoutY="252.0" prefHeight="200.0" prefWidth="720.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Label layoutX="16.0" layoutY="252.0" prefHeight="44.0" prefWidth="129.0" text="Manage event bookings" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="183.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="735.0" AnchorPane.topAnchor="252.0" />
+      <Button fx:id="btnAddEventBooking" layoutX="16.0" layoutY="296.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="129.0" text="New" />
+      <Button fx:id="btnAddEventBookingbtnEditEventBooking" layoutX="16.0" layoutY="336.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="129.0" text="Edit" />
+      <Button fx:id="btnDelete" layoutX="16.0" layoutY="376.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="129.0" text="Delete" />
+   </children>
+</AnchorPane>

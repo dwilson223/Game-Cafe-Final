@@ -12,7 +12,7 @@ import javafx.beans.property.StringProperty;
  *
  * @author Dave
  */
-public class Games {
+public class Game {
     
     
     private final StringProperty gameId;
@@ -22,7 +22,7 @@ public class Games {
     private final StringProperty multiplayer;
     private final StringProperty type;
 
-    public Games(String gameId, String name, String rating, String platform, String type, String multiplayer) {
+    public Game(String gameId, String name, String rating, String platform, String type, String multiplayer) {
         this.gameId = new SimpleStringProperty(gameId);
         this.name = new SimpleStringProperty(name);
         this.rating = new SimpleStringProperty(rating);

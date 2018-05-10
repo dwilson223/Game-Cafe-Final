@@ -24,7 +24,7 @@ public class GameCafeFinal extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Dashboard-home.fxml"));
         
         Scene scene = new Scene(root);
         stage.setTitle("Dash Board");
@@ -44,14 +44,14 @@ public class GameCafeFinal extends Application {
             
         
             String host = "jdbc:derby://localhost:1527/GameCafe";
-            String uName = "Games";
-            String uPass = "games";
+            String uName = "team";
+            String uPass = "team";
             Connection con = DriverManager.getConnection( host, uName, uPass );
             
             //Test Connection and print results
             
             Statement stmt = con.createStatement( );
-            String SQL = "SELECT * FROM GAMES.MEMBERS";
+            String SQL = "SELECT * FROM GAMES.MEMBER";
             ResultSet rs = stmt.executeQuery(SQL);
             
             rs.next( );

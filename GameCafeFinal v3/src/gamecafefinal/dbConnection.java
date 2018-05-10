@@ -22,12 +22,12 @@ public class dbConnection {
             //Database Url
             String host = "jdbc:derby://localhost:1527/GameCafe";
             //Database Username
-            String uName = "Games";
+            String username = "team";
             //Database password
-            String uPass = "games";
+            String password ="team";
             
             Class.forName("org.apache.derby.jdbc.ClientDriver");
-            Connection conn = DriverManager.getConnection( host, uName, uPass );
+            Connection conn = DriverManager.getConnection( host, username, password);
             return conn;
 
         }   catch (ClassNotFoundException | SQLException ex) {

@@ -59,7 +59,7 @@ public class MemberTest {
         int number = 1;
         Member instance = new Member(1,"T","K","San",24,"today", "type", "address1", "address2", "Southampton", "UK", "SO14");
         boolean expResult = true;
-        boolean result = instance.checkID(number);
+        boolean result = instance.checkmemberid(number);
         assertEquals(expResult, result);
         
     }

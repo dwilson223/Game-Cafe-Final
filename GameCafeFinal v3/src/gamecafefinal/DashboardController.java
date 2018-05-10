@@ -33,8 +33,10 @@ import javafx.stage.Stage;
  *
  * @author Dave
  */
-public class FXMLDocumentController implements Initializable {
-    
+public class DashboardController implements Initializable {
+   
+    @FXML
+    private OpenView ov = new OpenView();    
     
     //Homepage Objects
     @FXML
@@ -60,7 +62,7 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private TableColumn<members, String> mType;
     
-    //Games Management objects! Games Management objects! Games Management objects!
+    //Games Management objects! Game Management objects! Game Management objects!
     @FXML
     private Button btnLoadGames;
     @FXML
@@ -68,19 +70,19 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private Button btnNewGame;
     @FXML
-    private TableView<Games> gTable;
+    private TableView<Game> gTable;
     @FXML
-    private TableColumn<Games, String> gId;
+    private TableColumn<Game, String> gId;
     @FXML
-    private TableColumn<Games, String> gTitle;
+    private TableColumn<Game, String> gTitle;
     @FXML
-    private TableColumn<Games, String> gRating;
+    private TableColumn<Game, String> gRating;
     @FXML
-    private TableColumn<Games, String> gPlatform;
+    private TableColumn<Game, String> gPlatform;
     @FXML
-    private TableColumn<Games, String> gType;
+    private TableColumn<Game, String> gType;
     @FXML
-    private TableColumn<Games, String> gMultiplayer;
+    private TableColumn<Game, String> gMultiplayer;
     
     //Add New Game Form Objects!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     
@@ -124,6 +126,29 @@ public class FXMLDocumentController implements Initializable {
     
     
     //End of objects declaration! End of objects declaration! End of objects declaration! End of objects declaration! 
+    /* ----------------------- View Management ------------------------------ */
+    @FXML
+    private void goToGamesManagement(ActionEvent event) throws IOException {
+       ov.open(event, "GamesManagement.fxml"); 
+    }
+     @FXML
+    private void goToMembersManagement(ActionEvent event) throws IOException {
+       ov.open(event, "MembersManagement.fxml"); 
+    }
+     @FXML
+    private void goToEventsManagement(ActionEvent event) throws IOException {
+       ov.open(event, "EventsManagement.fxml"); 
+    }
+     @FXML
+    private void goToBookingsManagement(ActionEvent event) throws IOException {
+       ov.open(event, "BookingsManagement.fxml"); 
+    }
+    @FXML
+    private void goToDashboard(ActionEvent event) throws IOException {
+       ov.open(event, "Dashboard-home.fxml"); 
+    }
+    /* _______________________________________________________________________ */
+    
     
     // Method for changing between scenes
     @FXML
@@ -164,7 +189,7 @@ public class FXMLDocumentController implements Initializable {
     
     //Will hold data
     private ObservableList<members> memberData;
-    private ObservableList<Games> gameData;
+    private ObservableList<Game> gameData;
     //Connection variable
     private dbConnection dbc;
     
@@ -192,7 +217,7 @@ public class FXMLDocumentController implements Initializable {
         
             }
         } catch (SQLException ex) {
-            //Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
+            //Logger.getLogger(DashboardController.class.getName()).log(Level.SEVERE, null, ex);
             System.err.println("Error:" + ex);
         }
         
@@ -218,11 +243,11 @@ public class FXMLDocumentController implements Initializable {
             ResultSet rs = conn.createStatement().executeQuery("SELECT * FROM GAMES.GAMES");
             while (rs.next()) {
             
-            gameData.add(new Games(rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getString(6)));
+            gameData.add(new Game(rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getString(6)));
         
             }
         } catch (SQLException ex) {
-            //Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
+            //Logger.getLogger(DashboardController.class.getName()).log(Level.SEVERE, null, ex);
             System.err.println("Error:" + ex);
         }
         
