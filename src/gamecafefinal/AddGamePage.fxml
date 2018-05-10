@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gamecafefinal.FXMLDocumentController">
+    <children>
+      <MenuBar id="menu_header" layoutY="7.0" prefHeight="32.0" prefWidth="1105.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="New member" />
+                  <MenuItem mnemonicParsing="false" text="View member profile" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Delete member" />
+                  <MenuItem mnemonicParsing="false" text="Quit" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Go to">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Home" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="eSports Events" />
+                  <MenuItem mnemonicParsing="false" text="Bookings" />
+                  <MenuItem mnemonicParsing="false" text="Games" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About Game cafe" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Label alignment="CENTER" layoutX="264.0" layoutY="39.0" prefHeight="44.0" prefWidth="577.0" text="Add Game Form" />
+      <GridPane layoutX="195.0" layoutY="83.0" prefHeight="482.0" prefWidth="715.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="359.0" minWidth="10.0" prefWidth="358.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="361.0" minWidth="10.0" prefWidth="357.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="textGameID" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="textTitle" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="textRating" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="textMultiplayer" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="textGameType" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label text="Game ID:" GridPane.rowIndex="1" />
+            <Label text="Title:" GridPane.rowIndex="2" />
+            <Label text="Rating:" GridPane.rowIndex="3" />
+            <Label text="Platform:" GridPane.rowIndex="4" />
+            <Label text="Type:" GridPane.rowIndex="5" />
+            <Label text="Multiplayer: (Yes or No)" GridPane.rowIndex="6" />
+            <Button fx:id="btnGameSave" mnemonicParsing="false" onAction="#btnSaveGame" text="Save Record" GridPane.rowIndex="7" />
+            <Button fx:id="btnClear" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="Clear Form" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="textPlatform" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <Button fx:id="btnBack" layoutX="33.0" layoutY="46.0" mnemonicParsing="false" onAction="#changeSceneAction" text="Back" />
+   </children>
+</AnchorPane>
