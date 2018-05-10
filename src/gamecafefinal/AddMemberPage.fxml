@@ -6,13 +6,13 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="539.0" prefWidth="864.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gamecafefinal.DashboardController">
+<AnchorPane id="AnchorPane" prefHeight="539.0" prefWidth="864.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gamecafefinal.AddMemberController">
    <children>
       <MenuBar id="menu_header" layoutY="7.0" prefHeight="32.0" prefWidth="1105.0">
          <menus>
             <Menu mnemonicParsing="false" text="File">
                <items>
-                  <MenuItem fx:id="menuAddMember" mnemonicParsing="false" onAction="#changeSceneAction" text="New member" />
+                  <MenuItem fx:id="menuAddMember" mnemonicParsing="false" text="New member" />
                   <MenuItem mnemonicParsing="false" text="View member profile" />
                   <SeparatorMenuItem mnemonicParsing="false" />
                   <MenuItem mnemonicParsing="false" text="Delete member" />
@@ -76,7 +76,7 @@
             <Button fx:id="btnSave" mnemonicParsing="false" onAction="#btnSave" text="Save Record" GridPane.halignment="CENTER" GridPane.rowIndex="15" GridPane.valignment="CENTER" />
             <Button fx:id="btnClear" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="Clear Form" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="15" GridPane.valignment="CENTER" />
             <Label prefHeight="17.0" prefWidth="99.0" text="Last Name" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
-            <TextField fx:id="txetLastName" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="textLastName" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
             <TextField fx:id="textAge" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
             <Label prefHeight="17.0" prefWidth="99.0" text="Age:" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
             <Label maxWidth="-Infinity" prefWidth="99.0" text="Adress Line  2:" GridPane.halignment="CENTER" GridPane.rowIndex="9" GridPane.valignment="CENTER" />
@@ -87,6 +87,6 @@
             <TextField fx:id="textCountry" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="12" />
          </children>
       </GridPane>
-      <Button fx:id="btnBack" layoutX="33.0" layoutY="46.0" mnemonicParsing="false" onAction="#changeSceneAction" text="Back" />
+      <Button fx:id="btnBack" layoutX="33.0" layoutY="46.0" mnemonicParsing="false" onAction="#goToMembersManagement" text="Back" />
    </children>
 </AnchorPane>

@@ -23,6 +23,8 @@ public class Member {
     private String city;
     private String country;
     private String postcode;
+    private final String fullName;
+    private final String fullAddress;
 
     public Member(int memberId, String firstName, String lastName, String nickname, int age, String dob, String type, String address1, String address2, String city, String country, String postcode) {
         this.memberId = memberId;
@@ -37,8 +39,21 @@ public class Member {
         this.city = city;
         this.country = country;
         this.postcode = postcode;
+        this.fullName = firstName + " "+ lastName;
+        this.fullAddress = address1 + "\n" + address2 + "\n" + city + "\n" + country + "\n" + postcode;
+    }
+    
+        
+    
+    public String getFullName() {
+        return fullName;
+    }
+    public String getFullAddress() {
+        return fullAddress;
     }
 
+
+   
     public int getMemberId() {
         return memberId;
     }

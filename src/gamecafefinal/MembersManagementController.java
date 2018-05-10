@@ -94,19 +94,20 @@ public class MembersManagementController implements Initializable {
             System.err.println("Error:" + ex);
         }
         
-       
+        
+                
         mId.setCellValueFactory(new PropertyValueFactory<>("memberId"));
-        mFirstName.setCellValueFactory(new PropertyValueFactory<>("firstName"));
-        mLastName.setCellValueFactory(new PropertyValueFactory<>("lastName"));
+        //mFirstName.setCellValueFactory(new PropertyValueFactory<>("firstName"));
+        mLastName.setCellValueFactory(new PropertyValueFactory<>("fullName"));
         mNickname.setCellValueFactory(new PropertyValueFactory<>("nickname"));
         mAge.setCellValueFactory(new PropertyValueFactory<>("age"));
         mDob.setCellValueFactory(new PropertyValueFactory<>("dob"));
         mType.setCellValueFactory(new PropertyValueFactory<>("type"));
-        mAddress1.setCellValueFactory(new PropertyValueFactory<>("address1"));
-        mAddress2.setCellValueFactory(new PropertyValueFactory<>("address2"));
-        mCity.setCellValueFactory(new PropertyValueFactory<>("city"));
-        mCountry.setCellValueFactory(new PropertyValueFactory<>("country"));
-        mPostcode.setCellValueFactory(new PropertyValueFactory<>("postcode"));
+        mAddress1.setCellValueFactory(new PropertyValueFactory<>("fullAddress"));
+        //mAddress2.setCellValueFactory(new PropertyValueFactory<>("address2"));
+        //mCity.setCellValueFactory(new PropertyValueFactory<>("city"));
+        //mCountry.setCellValueFactory(new PropertyValueFactory<>("country"));
+        //mPostcode.setCellValueFactory(new PropertyValueFactory<>("postcode"));
          
         
         table.setItems(null);
